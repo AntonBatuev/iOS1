@@ -10,7 +10,7 @@
 
 @interface VSController : NSObject
 {
-    NSUInteger _count_taped;
+    NSUInteger _count_pres;
     IBOutlet UILabel *_label;
 }
 

@@ -12,8 +12,8 @@
 
 -(IBAction)sig_pressed:(id)sender
 {
-    _count_taped++;
-    _label.text = [NSString stringWithFormat:@"%u", _count_taped];
+    _count_pres++;
+    _label.text = [NSString stringWithFormat:@"%u", _count_pres];
 }
 
 @end
