@@ -13,7 +13,6 @@
 		845CA7CB182A48580023B46B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 845CA7C9182A48580023B46B /* InfoPlist.strings */; };
 		845CA7CD182A48580023B46B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CA7CC182A48580023B46B /* main.m */; };
 		845CA7D1182A48580023B46B /* VSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CA7D0182A48580023B46B /* VSAppDelegate.m */; };
-		845CA7D4182A48590023B46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845CA7D2182A48590023B46B /* Main.storyboard */; };
 		845CA7D7182A48590023B46B /* VSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CA7D6182A48590023B46B /* VSViewController.m */; };
 		845CA7D9182A48590023B46B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845CA7D8182A48590023B46B /* Images.xcassets */; };
 		845CA7E0182A48590023B46B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845CA7DF182A48590023B46B /* XCTest.framework */; };
@@ -21,6 +20,8 @@
 		845CA7E2182A48590023B46B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845CA7C4182A48580023B46B /* UIKit.framework */; };
 		845CA7EA182A48590023B46B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 845CA7E8182A48590023B46B /* InfoPlist.strings */; };
 		845CA7EC182A48590023B46B /* iOS1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CA7EB182A48590023B46B /* iOS1Tests.m */; };
+		84828758182A4EFC00F30FAD /* VSMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84828757182A4EFC00F30FAD /* VSMainWindow.xib */; };
+		84F2B226182A4B3300DE869D /* VSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2B225182A4B3300DE869D /* VSController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		845CA7CE182A48580023B46B /* iOS1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS1-Prefix.pch"; sourceTree = "<group>"; };
 		845CA7CF182A48580023B46B /* VSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSAppDelegate.h; sourceTree = "<group>"; };
 		845CA7D0182A48580023B46B /* VSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSAppDelegate.m; sourceTree = "<group>"; };
-		845CA7D3182A48590023B46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		845CA7D5182A48590023B46B /* VSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSViewController.h; sourceTree = "<group>"; };
 		845CA7D6182A48590023B46B /* VSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSViewController.m; sourceTree = "<group>"; };
 		845CA7D8182A48590023B46B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +53,9 @@
 		845CA7E7182A48590023B46B /* iOS1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS1Tests-Info.plist"; sourceTree = "<group>"; };
 		845CA7E9182A48590023B46B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		845CA7EB182A48590023B46B /* iOS1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS1Tests.m; sourceTree = "<group>"; };
+		84828757182A4EFC00F30FAD /* VSMainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VSMainWindow.xib; path = ../VSMainWindow.xib; sourceTree = "<group>"; };
+		84F2B224182A4B3300DE869D /* VSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSController.h; sourceTree = "<group>"; };
+		84F2B225182A4B3300DE869D /* VSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +115,11 @@
 		845CA7C6182A48580023B46B /* iOS1 */ = {
 			isa = PBXGroup;
 			children = (
+				84828757182A4EFC00F30FAD /* VSMainWindow.xib */,
+				84F2B224182A4B3300DE869D /* VSController.h */,
+				84F2B225182A4B3300DE869D /* VSController.m */,
 				845CA7CF182A48580023B46B /* VSAppDelegate.h */,
 				845CA7D0182A48580023B46B /* VSAppDelegate.m */,
-				845CA7D2182A48590023B46B /* Main.storyboard */,
 				845CA7D5182A48590023B46B /* VSViewController.h */,
 				845CA7D6182A48590023B46B /* VSViewController.m */,
 				845CA7D8182A48590023B46B /* Images.xcassets */,
@@ -231,7 +236,7 @@
 			files = (
 				845CA7D9182A48590023B46B /* Images.xcassets in Resources */,
 				845CA7CB182A48580023B46B /* InfoPlist.strings in Resources */,
-				845CA7D4182A48590023B46B /* Main.storyboard in Resources */,
+				84828758182A4EFC00F30FAD /* VSMainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +257,7 @@
 			files = (
 				845CA7D7182A48590023B46B /* VSViewController.m in Sources */,
 				845CA7CD182A48580023B46B /* main.m in Sources */,
+				84F2B226182A4B3300DE869D /* VSController.m in Sources */,
 				845CA7D1182A48580023B46B /* VSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,14 +287,6 @@
 				845CA7CA182A48580023B46B /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		845CA7D2182A48590023B46B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				845CA7D3182A48590023B46B /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		845CA7E8182A48590023B46B /* InfoPlist.strings */ = {
@@ -461,6 +459,7 @@
 				845CA7F1182A48590023B46B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		845CA7F2182A48590023B46B /* Build configuration list for PBXNativeTarget "iOS1Tests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +468,7 @@
 				845CA7F4182A48590023B46B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
