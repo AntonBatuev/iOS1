@@ -10,10 +10,10 @@
 
 @interface VSController : NSObject
 {
-    NSUInteger _timesOfPresses;
+    NSUInteger _count_taped;
     IBOutlet UILabel *_label;
 }
 
--(IBAction)buttonPressed:(id)sender;
+-(IBAction)sig_pressed:(id)sender;
 
 @end

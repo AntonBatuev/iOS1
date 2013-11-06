@@ -10,10 +10,10 @@
 
 @implementation VSController
 
--(IBAction)buttonPressed:(id)sender
+-(IBAction)sig_pressed:(id)sender
 {
-    _timesOfPresses++;
-    _label.text = [NSString stringWithFormat:@"%u", _timesOfPresses];
+    _count_taped++;
+    _label.text = [NSString stringWithFormat:@"%u", _count_taped];
 }
 
 @end
